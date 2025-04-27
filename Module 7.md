@@ -1,17 +1,21 @@
-EXP NO 1A: C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
-Aim:
+## EXP NO 1A: C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
+
+## Aim:
 To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
 
-Algorithm:
-Declare structure eligible with age (integer) and n (character array)
-Declare variable e of type eligible
-Input age and name using scanf, store in e
-If e.age <= 6
-Print "Vaccine Eligibility: No" Else
-Print "Vaccine Eligibility: Yes"
-Print details (e.age, e.n)
-Return 0
-Program:
+## Algorithm:
+1.	Declare structure eligible with age (integer) and n (character array)
+2.	Declare variable e of type eligible
+3.	Input age and name using scanf, store in e
+4.	If e.age <= 6
+   -	Print "Vaccine Eligibility: No"
+Else
+   -	Print "Vaccine Eligibility: Yes"
+5.	Print details (e.age, e.n)
+6.	Return 0
+ 
+## Program:
+```
 #include<stdio.h> 
 struct eligib
 {
@@ -36,27 +40,31 @@ printf("Age:%d\nName:%svaccine:%d\neligibility:yes",e.age,e.n,e.age);
 }
 
 
-Output:
+```
+## Output:
 
-![437299579-e0284c59-30b0-4199-ab02-82322c9e6d53](https://github.com/user-attachments/assets/578e6f30-0519-4097-b1f5-7e2f6292de0e)
+![image](https://github.com/user-attachments/assets/e0284c59-30b0-4199-ab02-82322c9e6d53)
+
+## Result:
+Thus, the program is verified successfully. 
 
 
-Result:
-Thus, the program is verified successfully.
 
-EXP NO 1B: C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION
-Aim:
+## EXP NO 1B: C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION
+## Aim:
 To write a C program for passing structure as function and returning a structure from a function
 
-Algorithm:
-Define structure numbers with members a and b.
-Declare variable n of type numbers.
-Prompt the user to enter values for a and b.
-Input values for a and b into n using scanf.
-Call the add function with n as an argument.
-Print the result returned by the add function.
-Return 0
-Program:
+## Algorithm:
+1.	Define structure numbers with members a and b.
+2.	Declare variable n of type numbers.
+3.	Prompt the user to enter values for a and b.
+4.	Input values for a and b into n using scanf.
+5.	Call the add function with n as an argument.
+6.	Print the result returned by the add function.
+7.	Return 0
+ 
+## Program:
+```
 #include<stdio.h> 
 struct numbers
 {
@@ -73,33 +81,40 @@ int add(struct numbers n)
 return n.a+n.b;
 }
 
-Output:
+```
 
-![437300225-bf6301bb-397c-48f0-bab6-2ab33e70a0b1](https://github.com/user-attachments/assets/f4f15a49-0305-4774-8ee0-e21d5d5d74e6)
+## Output:
+![image](https://github.com/user-attachments/assets/bf6301bb-397c-48f0-bab6-2ab33e70a0b1)
 
-
-Result:
+## Result:
 Thus, the program is verified successfully
 
-EXP.NO 1C: C PROGRAM TO READ A FILE NAME FROM USER AND WRITE THAT FILE USING FOPEN()
-Aim:
+
+ 
+## EXP.NO 1C: C PROGRAM TO READ A FILE NAME FROM USER AND WRITE THAT FILE USING FOPEN()
+
+## Aim:
 To write a C program to read a file name from user
 
-Algorithm:
-Include the necessary header file stdio.h.
-Begin the main function.
-Declare a file pointer p. Declare a character array name to store the file name.
-Prompt the user to enter a file name. Use scanf to input the file name into the name array.
-Print a message indicating that the file with the specified name has been created successfully.
-Use fopen to open a file with the name provided by the user in write mode ("w").
-If successful, continue to the next step.
-If unsuccessful, print an error message and exit the program with a non-zero status.
-Print a message indicating that the file has been opened successfully.
-Use fclose to close the file.
-Print a message indicating that the file has been closed.
-End the main function.
-Return 0 to indicate successful program execution.
-Program:
+## Algorithm:
+1.	Include the necessary header file stdio.h.
+2.	Begin the main function.
+3.	Declare a file pointer p.
+Declare a character array name to store the file name.
+4.	Prompt the user to enter a file name.
+Use scanf to input the file name into the name array.
+5.	Print a message indicating that the file with the specified name has been created successfully.
+6.	Use fopen to open a file with the name provided by the user in write mode ("w").
+-	If successful, continue to the next step.
+-	If unsuccessful, print an error message and exit the program with a non-zero status.
+1.	Print a message indicating that the file has been opened successfully.
+2.	Use fclose to close the file.
+3.	Print a message indicating that the file has been closed.
+4.	End the main function.
+5.	Return 0 to indicate successful program execution.
+ 
+## Program:
+```
 #include <stdio.h> int main()
 {
  FILE *p;
@@ -108,33 +123,37 @@ Program:
  printf("\n%s File Opened",name); fclose(p);
  printf("\n%s File Closed",name);
 }
-Output:
+```
+## Output:
+![image](https://github.com/user-attachments/assets/f756035f-4b96-436d-9bcd-c43cc2dd70ab)
 
-![437300688-f756035f-4b96-436d-9bcd-c43cc2dd70ab](https://github.com/user-attachments/assets/240226c0-0867-4b28-a998-8bdf9dd72970)
-
-
-Result:
+## Result:
 Thus, the program is verified successfully
+ 
 
-EXP NO 1D: PROGRAM TO READ A FILE NAME FROM USER, WRITE THAT FILE AND INSERT TEXT IN TO THAT FILE
-Aim:
+
+## EXP NO 1D:  PROGRAM TO READ A FILE NAME FROM USER, WRITE THAT FILE AND INSERT TEXT IN TO THAT FILE
+## Aim:
 To write a C program to read, a file and insert text in that file
-
-Algorithm:
-Include the necessary header file stdio.h.
-Begin the main function.
-Declare a file pointer p. Declare character arrays name and text. Declare an integer variable num.
-Prompt the user to enter a file name and the number of strings. Use scanf to input the file name into the name array and the number of strings into the num variable.
-Use fopen to open a file with the name provided by the user in write mode ("w").
-If successful, continue to the next step.
-If unsuccessful, print an error message and exit the program with a non-zero status.
-Print a message indicating that the file has been opened successfully.
-Use a loop to input strings from the user and write them to the file using fputs.
-Use fclose to close the file.
-Print a message indicating that data has been added successfully.
-End the main function.
-Return 0 to indicate successful program execution.
-Program:
+## Algorithm:
+1.	Include the necessary header file stdio.h.
+2.	Begin the main function.
+3.	Declare a file pointer p.
+Declare character arrays name and text. Declare an integer variable num.
+4.	Prompt the user to enter a file name and the number of strings.
+Use scanf to input the file name into the name array and the number of strings into the num variable.
+5.	Use fopen to open a file with the name provided by the user in write mode ("w").
+-	If successful, continue to the next step.
+-	If unsuccessful, print an error message and exit the program with a non-zero status.
+6.	Print a message indicating that the file has been opened successfully.
+1.	Use a loop to input strings from the user and write them to the file using fputs.
+2.	Use fclose to close the file.
+3.	Print a message indicating that data has been added successfully.
+4.	End the main function.
+5.	Return 0 to indicate successful program execution.
+ 
+## Program:
+```
 #include <stdio.h> 
 int main()
 {
@@ -150,19 +169,21 @@ int main()
 
 }
 
-Output:
+```
+## Output:
+![image](https://github.com/user-attachments/assets/186b485b-8d33-4b6f-a42e-3f088b0aec68)
 
-![437301666-186b485b-8d33-4b6f-a42e-3f088b0aec68](https://github.com/user-attachments/assets/8ed79faa-58ae-4a1f-8b2a-a9c2da0f5d5b)
-
-
-Result:
+## Result:
 Thus, the program is verified successfully
 
-Ex No 1E: C PROGRAM TO DISPLAY STUDENT DETAILS USING STRUCTURE
-Aim:
+
+
+## Ex No 1E: C PROGRAM TO DISPLAY STUDENT DETAILS USING STRUCTURE
+
+## Aim:
 The aim of this program is to dynamically allocate memory to store information about multiple subjects (name and marks), input the details for each subject, and then display the stored information. Finally, it frees the allocated memory to prevent memory leaks.
 
-Algorithm:
+## Algorithm:
 1.Input the number of subjects.
 
 2.Read the integer value n from the user, which represents the number of subjects.
@@ -189,7 +210,8 @@ Algorithm:
 
 13.End the program by returning 0.
 
-Program:
+## Program:
+```
 #include <stdio.h>
 #include <stdlib.h>
 struct Subject
@@ -221,10 +243,9 @@ int main()
     return 0;
 }
 
-Output:
+```
+## Output:
+![image](https://github.com/user-attachments/assets/6af74a8b-cf34-4ec4-b5b1-d13171613cf7)
 
-![437302214-6af74a8b-cf34-4ec4-b5b1-d13171613cf7](https://github.com/user-attachments/assets/095a21df-abd5-4454-9e41-9bbb7e1bb909)
-
-
-Result:
+## Result:
 Thus, the program is verified successfully
